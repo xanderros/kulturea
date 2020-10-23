@@ -1,0 +1,50 @@
+---
+title: Kulturea | Contact
+---
+{% extends "layouts/_layout.html" %}
+{% set active_page = "contact" %}
+
+{% block content %}
+
+<div class="wrapper">
+  {% include "partials/header.html" %}
+  <main class="wrapper__content">
+    <!-- top section -->
+    {{ top('Stretnime sa', 'na šálke dobrej kávy', 'top-contact', 'Kontaktujte nás', '#contact', '/') }}
+    <!-- top section (end) -->
+
+    <section class="section box" id="contact">
+      <div class="caption">
+        <h2 class="title">Kontaktujte nás</h2>
+      </div>
+      <div class="item">
+        <div class="item__base">
+          <p>
+            Kulturea s.r.o.<br>
+            <a href="https://goo.gl/maps/UT5waZz1AzQPFqmJA" target="_blank">Zochova 5, 811 03 Bratislava<br>
+            Slovensko</a>
+          </p>
+          <p>
+            Máte otázky? Radi vám ich zodpovieme.<br>
+            Kontaktujte nás na čísle:<br>
+            <a href="tel:+421903863271">+421 903 863 271</a><br>
+            alebo e-mail:<br>
+            <a href="mailto:ahoj@kulturea.sk">ahoj@kulturea.sk</a>
+          </p>
+        </div>
+        <div class="item__side">
+          <img class="item__img" srcset="img/contact-item.jpg, img/contact-item@2x.jpg 2x" alt="Kontaktujte nás">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- sticky promo -->
+  {% include "partials/promo.html" %}
+  <!-- sticky promo -->
+
+  {% include "partials/footer.html" %}
+</div>
+
+{% endblock %}

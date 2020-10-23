@@ -1,0 +1,73 @@
+//*** --- Paths --- *** //
+$imgPath: '../img';
+$fontPath: '../fonts';
+
+//*** --- Colors --- *** //
+
+// site colors
+$white: #fff;
+$black: #1c1c1c;
+$gray-dark: #626B77;
+$gray: #959DA7;
+$gray-light: #F5F7FA;
+$yellow: #ffce53;
+
+// text colors
+$text-color: $gray-dark;
+
+// background colors
+$bg-gray: #F5F7FA;
+
+// other colors
+$shadow-slide: 0 30px 48px 0 rgba(219,221,225,0.37);
+$shadow-slide-small: 0 15px 20px 0 rgba(219,221,225,0.4);
+$line-color: #e6e9ed;
+
+
+//*** --- Typography --- *** //
+
+// basic typography
+$sofia-pro: 'Sofia Pro', sans-serif;
+$font-family: $sofia-pro;
+$font-size: 14px;
+$line-height: 1;
+
+
+//*** --- Layout --- *** //
+
+// breakpoints
+$screen-xs: 374px;
+$screen-sm: 576px;
+$screen-md: 767px;
+$screen-lg: 992px;
+$screen-xl: 1199px;
+$screen-xxl: 1439px;
+
+// widths
+$width-default: 1120px;
+$width-big: 1440px;
+
+// main paddings
+$padding-small: 20px;
+$padding-middle: 25px;
+$padding-big: 30px;
+
+// header height
+$header-height: 131px;
+$header-height-tablet: 66px;
+$header-height-mob: 60px;
+
+
+//*** --- Transitions --- *** //
+
+/* default for most elements */
+$transition-time: 0.3s;
+$transition-style: ease;
+$transition: 0.3s ease;
+
+// transition for mobile navigation
+$transition-nav: 0.25s ease-out;
+
+// transition for accordeon
+$transition-accordeon: 0.35s;
+

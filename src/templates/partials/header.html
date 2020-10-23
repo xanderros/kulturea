@@ -1,0 +1,40 @@
+{% set navigation = [{
+"id"      : "about",
+"caption" : "Kto sme"
+},{
+"id"      : "corporate-culture",
+"caption" : "Čo robíme"
+},{
+"id"      : "price-list",
+"caption" : "Cenník"
+},{
+"id"      : "questions",
+"caption" : "Často kladené otázky"
+},{
+"id"      : "contact",
+"caption" : "Kontakt"
+}] %}
+
+<header class="header">
+  <div class="header__logo">
+    <a href="/" class="logo">
+      <svg class="logo__icon" width="128" height="25">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-logo-kulturea"></use>
+      </svg>
+    </a>
+  </div>
+  <div class="nav">
+    <nav class="nav__wrap">
+      <ul class="nav__list">
+        {% for item in navigation %}
+        <li class="nav__item{% if item.id == active_page %} nav__item_active {% endif%}">
+          <a class="nav__link" href="{{ item.id }}.html">{{ item.caption }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+    <a class="nav__btn" href="#">
+      <span class="nav__btn-line"></span>
+    </a>
+  </div>
+</header>

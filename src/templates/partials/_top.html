@@ -1,0 +1,26 @@
+{% macro top(title, desc, img, btn, btnLink, backBtn) %}
+<div class="top">
+  <div class="top__side">
+    {% if backBtn %}
+    <a href="{{ backBtn }}" class="top__back">
+      <svg class="top__back-icon" width="28" height="22">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-arrow-back"></use>
+      </svg>
+    </a>
+    {% endif %}
+  </div>
+  <div class="top__base">
+    <picture>
+      <source srcset="img/{{ img }}_small.jpg, img/{{ img }}_small@2x.jpg 2x" media="(max-width: 450px)">
+      <img class="top__bg" srcset="img/{{ img }}.jpg, img/{{ img }}@2x.jpg 2x" alt="">
+    </picture>
+    <div class="top__content">
+      <h1 class="top__title">{{ title | safe }}</h1>
+      <div class="top__desc">{{ desc | safe }}</div>
+      <div class="top__btn">
+        <a href="{{ btnLink }}" class="btn btn_color">{{ btn }}</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endmacro %}

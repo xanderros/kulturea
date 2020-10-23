@@ -1,0 +1,165 @@
+---
+title: Kulturea | Homepage
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<div class="wrapper">
+  {% include "partials/header.html" %}
+  <main class="wrapper__content">
+    <!-- top section -->
+    {{ top('Staviame komunitu', 'dôveryhodných firemných kultúr', 'top-home', 'Kontaktujte nás', 'contact.html') }}
+    <!-- top section (end) -->
+
+    <section class="section box">
+      <div class="caption">
+        <h2 class="title">KTO SME</h2>
+        <div class="desc">
+          Kultureu sme založili za účelom prezentácie firiem smerom na verejnosť, či už ide o potencionálne nových zamestnancov
+          alebo aj existujúcich klientov, ktorí chcú vedieť, ako firma funguje a na akých hodnotách stojí.
+        </div>
+      </div>
+      <div class="item item_reverse">
+        <div class="item__base">
+          <p>
+            Myslíme si totiž, že tak ako si ľudia vyberajú svoj okruh priateľov, tak si vyberajú aj prácu a kultúru, ktorá je ich vlastným hodnotám najbližšie.
+          </p>
+          <p>
+            Jedine takto je možné dosiahnuť maximálne efektívny a zdravý vzťah medzi firmou a zamestnancom.
+          </p>
+          <div class="item__btn">
+            <a href="about.html" class="btn btn_light">Viac o tom, kto sme</a>
+          </div>
+        </div>
+        <div class="item__side">
+          <img class="item__img" srcset="img/who.jpg, img/who@2x.jpg 2x" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="cover">
+      <div class="box">
+        <div class="caption">
+          <h2 class="title">ČO ROBÍME</h2>
+          <div class="desc">
+            Existuje na trhu názor, že v dnešnej dobe je najťažšie nájsť a udržať toho
+            správneho zamestnanca. Plat? Už dávno neplatí, že je to alfa a omega.
+          </div>
+        </div>
+        <div class="item">
+          <div class="item__base">
+            <p>
+              Predsa len, pracovať znamená tráviť minimálne 8 hodín svojho času v nejakom prostredí, interagovať s ľuďmi, ktorých si nevyberáme, riešiť úlohy a napĺňať definované ciele.
+            </p>
+            <p>
+              Neexistuje dobrá a zlá kultúra. Je len modrá, zelená, červená a mohli by sme pokračovať.
+            </p>
+            <div class="item__btn">
+              <a href="corporate-culture.html" class="btn btn_light">Viac o tom, čo robíme</a>
+            </div>
+          </div>
+          <div class="item__side">
+            <img class="item__img" srcset="img/work.jpg, img/work@2x.jpg 2x" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section box">
+      <div class="caption">
+        <h2 class="title">ŽURNÁL</h2>
+      </div>
+      <!-- Slider zurnal -->
+      <div class="slider slider_zurnal">
+        <div class="slider__container">
+          {% set articles = [{
+          "img"  : "article-1",
+          "title": "Faktory šťastia vo firemnej kultúre",
+          "info" : "Tomáš Krebs, November 10",
+          "desc" : "Cítite sa šťastný vo svojej práci? - na túto otázku by si mal každý …",
+          "link" : "https://www.linkedin.com/pulse/faktory-šťastia-vo-firemnej-kultúre-tomáš-krebs/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_post_details%3B6XV2qaeeRC2bArO1%2FGp%2FCQ%3D%3D"
+          },{
+          "img"  : "article-2",
+          "title": "Kulturea: <br>O čo nám ide?",
+          "info" : "Tomáš Krebs, September 25",
+          "desc" : "V mojom ďalšom blogu by som sa rád povenoval esencii toho …",
+          "link" : "https://www.linkedin.com/pulse/kulturea-o-čo-nám-ide-tomáš-krebs/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_post_details%3B6XV2qaeeRC2bArO1%2FGp%2FCQ%3D%3D"
+          },{
+          "img"  : "article-3",
+          "title": "Prečo sa oplatí investovať do vlastnej kultúry?",
+          "info" : "Tomáš Krebs, September 11",
+          "desc" : "V mojich predošlých blogoch som sa dopodrobna venoval …",
+          "link" : "https://www.linkedin.com/pulse/prečo-sa-oplat%C3%AD-investovať-do-vlastnej-kultúry-tomáš-krebs/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_post_details%3B6XV2qaeeRC2bArO1%2FGp%2FCQ%3D%3D"
+          },{
+          "img"  : "article-4",
+          "title": "Kulturea a naša misia",
+          "info" : "Tomáš Krebs, September 2",
+          "desc" : "Kulturea je slovenský startup, ktorý sme založili za účelom …",
+          "link" : "https://www.linkedin.com/pulse/kulturea-naša-misia-tomáš-krebs/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_post_details%3B6XV2qaeeRC2bArO1%2FGp%2FCQ%3D%3D"
+          },{
+          "img"  : "article-5",
+          "title": "Čo najviac vplýva na firemnú kultúru? – časť 2.",
+          "info" : "Tomáš Krebs, August 20",
+          "desc" : "Poďme si teraz rozobrať ďalšie 3 faktory, ktoré podľa mňa a aj …",
+          "link" : "https://www.linkedin.com/pulse/čo-najviac-vplýva-na-firemnú-kultúru-časť-2-tomáš-krebs/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_post_details%3B6XV2qaeeRC2bArO1%2FGp%2FCQ%3D%3D"
+          },{
+          "img"  : "article-6",
+          "title": "Čo najviac vplýva na firemnú kultúru?",
+          "info" : "Tomáš Krebs, August 8",
+          "desc" : "Firemná kultúra ovplyvňuje každého z nás. Či už je to …",
+          "link" : "https://www.linkedin.com/pulse/čo-najviac-vplýva-na-firemnú-kultúru-tomáš-krebs/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_post_details%3B6XV2qaeeRC2bArO1%2FGp%2FCQ%3D%3D"
+          }] %}
+          {% for item in articles %}
+          <div class="slider__item">
+            <div class="unit">
+              <div class="unit__top">
+                <img class="unit__img" srcset="img/{{ item.img }}.jpg, img/{{ item.img }}@2x.jpg 2x" alt="{{ item.title }}">
+              </div>
+              <div class="unit__title">{{ item.title | safe }}</div>
+              <div class="unit__content">
+                <div class="unit__info">{{ item.info }}</div>
+                <div class="unit__desc">{{ item.desc }}</div>
+                <div class="unit__btn">
+                  <a class="btn btn_light" target="_blank" href="{{ item.link }}">Prečítať si</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <!-- Slider zurnal (end)-->
+    </div>
+
+    <section class="discount">
+      <div class="discount__wrap">
+        <img class="discount__bg" srcset="img/discount.jpg, img/discount@2x.jpg 2x" alt="">
+      </div>
+      <div class="discount__box box">
+        <div class="discount__base">
+          <h2 class="discount__title">Kulturea spúšťa vianočnú kampaň.</h2>
+          <div class="discount__desc">Darujte si pod stromček digitálny profil v uvádzacej zľave.</div>
+          <div class="discount__btn">
+            <a href="price-list.html" class="btn btn_color">Darovať digitálny profil</a>
+          </div>
+        </div>
+        <div class="discount__side">
+          <div class="discount__mark">Akcia platí od 15.11. do 31.12.2019</div>
+          <div class="discount__note">
+            <p>
+              Každý firemný zákazník, ktorý podpíše zmluvu s KULTUREA na poskytovanie služieb <em>získa 20 % zľavu zo</em> zriaďovacieho poplatku vytvorenia digitálneho profilu.
+            </p>
+            <p>
+              Lepší darček firme pod stromčekom <em>nenájdete</em>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  {% include "partials/footer.html" %}
+</div>
+
+{% endblock %}

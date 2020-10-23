@@ -1,0 +1,27 @@
+{% from "partials/_top.html" import top %}
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>{% if title %}{{ title }}{% else %}Template{% endif %}</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" media="all" href="css/style.css">
+	{% include "../partials/_favicons.html" %}
+</head>
+<body>
+
+<!-- BEGIN content -->
+{% block content %}{% endblock %}
+<!-- END content -->
+
+<!-- BEGIN scripts -->
+<script src="js/script.js"></script>
+<!-- END scripts -->
+
+</body>
+</html>

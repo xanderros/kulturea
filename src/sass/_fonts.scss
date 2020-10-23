@@ -1,0 +1,42 @@
+// This unit is responsible for the typography of the project.
+// Do not write here any third-party styling.
+
+/* Sofia Pro Regular */
+@font-face {
+	font-family: 'Sofia Pro';
+	font-style: normal;
+	font-weight: 400;
+	src: local('☺'),
+	url('#{$fontPath}/Sofia-Pro-regular.woff2') format('woff2'),
+	url('#{$fontPath}/Sofia-Pro-regular.woff') format('woff');
+}
+
+/* Sofia Pro Medium */
+@font-face {
+	font-family: 'Sofia Pro';
+	font-style: normal;
+	font-weight: 500;
+	src: local('☺'),
+	url('#{$fontPath}/Sofia-Pro-medium.woff2') format('woff2'),
+	url('#{$fontPath}/Sofia-Pro-medium.woff') format('woff');
+}
+
+/* Sofia Pro SemiBold */
+@font-face {
+	font-family: 'Sofia Pro';
+	font-style: normal;
+	font-weight: 600;
+	src: local('☺'),
+	url('#{$fontPath}/Sofia-Pro-semibold.woff2') format('woff2'),
+	url('#{$fontPath}/Sofia-Pro-semibold.woff') format('woff');
+}
+
+/* Sofia Pro Bold */
+@font-face {
+	font-family: 'Sofia Pro';
+	font-style: normal;
+	font-weight: 700;
+	src: local('☺'),
+	url('#{$fontPath}/Sofia-Pro-bold.woff2') format('woff2'),
+	url('#{$fontPath}/Sofia-Pro-bold.woff') format('woff');
+}

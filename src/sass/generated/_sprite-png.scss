@@ -1,0 +1,167 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$logo-conde-nast-name: 'logo-conde-nast';
+$logo-conde-nast-x: 0px;
+$logo-conde-nast-y: 31px;
+$logo-conde-nast-offset-x: 0px;
+$logo-conde-nast-offset-y: -31px;
+$logo-conde-nast-width: 143px;
+$logo-conde-nast-height: 27px;
+$logo-conde-nast-total-width: 143px;
+$logo-conde-nast-total-height: 264px;
+$logo-conde-nast-image: '../img/sprite.png';
+$logo-conde-nast: (0px, 31px, 0px, -31px, 143px, 27px, 143px, 264px, '../img/sprite.png', 'logo-conde-nast', );
+$logo-dark-name: 'logo-dark';
+$logo-dark-x: 0px;
+$logo-dark-y: 196px;
+$logo-dark-offset-x: 0px;
+$logo-dark-offset-y: -196px;
+$logo-dark-width: 126px;
+$logo-dark-height: 31px;
+$logo-dark-total-width: 143px;
+$logo-dark-total-height: 264px;
+$logo-dark-image: '../img/sprite.png';
+$logo-dark: (0px, 196px, 0px, -196px, 126px, 31px, 143px, 264px, '../img/sprite.png', 'logo-dark', );
+$logo-le-figaro-name: 'logo-le-figaro';
+$logo-le-figaro-x: 0px;
+$logo-le-figaro-y: 0px;
+$logo-le-figaro-offset-x: 0px;
+$logo-le-figaro-offset-y: 0px;
+$logo-le-figaro-width: 110px;
+$logo-le-figaro-height: 25px;
+$logo-le-figaro-total-width: 143px;
+$logo-le-figaro-total-height: 264px;
+$logo-le-figaro-image: '../img/sprite.png';
+$logo-le-figaro: (0px, 0px, 0px, 0px, 110px, 25px, 143px, 264px, '../img/sprite.png', 'logo-le-figaro', );
+$logo-le-monde-name: 'logo-le-monde';
+$logo-le-monde-x: 0px;
+$logo-le-monde-y: 64px;
+$logo-le-monde-offset-x: 0px;
+$logo-le-monde-offset-y: -64px;
+$logo-le-monde-width: 100px;
+$logo-le-monde-height: 27px;
+$logo-le-monde-total-width: 143px;
+$logo-le-monde-total-height: 264px;
+$logo-le-monde-image: '../img/sprite.png';
+$logo-le-monde: (0px, 64px, 0px, -64px, 100px, 27px, 143px, 264px, '../img/sprite.png', 'logo-le-monde', );
+$logo-new-scientist-name: 'logo-new-scientist';
+$logo-new-scientist-x: 0px;
+$logo-new-scientist-y: 97px;
+$logo-new-scientist-offset-x: 0px;
+$logo-new-scientist-offset-y: -97px;
+$logo-new-scientist-width: 50px;
+$logo-new-scientist-height: 27px;
+$logo-new-scientist-total-width: 143px;
+$logo-new-scientist-total-height: 264px;
+$logo-new-scientist-image: '../img/sprite.png';
+$logo-new-scientist: (0px, 97px, 0px, -97px, 50px, 27px, 143px, 264px, '../img/sprite.png', 'logo-new-scientist', );
+$logo-the-guardian-name: 'logo-the-guardian';
+$logo-the-guardian-x: 0px;
+$logo-the-guardian-y: 130px;
+$logo-the-guardian-offset-x: 0px;
+$logo-the-guardian-offset-y: -130px;
+$logo-the-guardian-width: 129px;
+$logo-the-guardian-height: 27px;
+$logo-the-guardian-total-width: 143px;
+$logo-the-guardian-total-height: 264px;
+$logo-the-guardian-image: '../img/sprite.png';
+$logo-the-guardian: (0px, 130px, 0px, -130px, 129px, 27px, 143px, 264px, '../img/sprite.png', 'logo-the-guardian', );
+$logo-vogue-name: 'logo-vogue';
+$logo-vogue-x: 0px;
+$logo-vogue-y: 163px;
+$logo-vogue-offset-x: 0px;
+$logo-vogue-offset-y: -163px;
+$logo-vogue-width: 60px;
+$logo-vogue-height: 27px;
+$logo-vogue-total-width: 143px;
+$logo-vogue-total-height: 264px;
+$logo-vogue-image: '../img/sprite.png';
+$logo-vogue: (0px, 163px, 0px, -163px, 60px, 27px, 143px, 264px, '../img/sprite.png', 'logo-vogue', );
+$logo-name: 'logo';
+$logo-x: 0px;
+$logo-y: 233px;
+$logo-offset-x: 0px;
+$logo-offset-y: -233px;
+$logo-width: 126px;
+$logo-height: 31px;
+$logo-total-width: 143px;
+$logo-total-height: 264px;
+$logo-image: '../img/sprite.png';
+$logo: (0px, 233px, 0px, -233px, 126px, 31px, 143px, 264px, '../img/sprite.png', 'logo', );
+$spritesheet-width: 143px;
+$spritesheet-height: 264px;
+$spritesheet-image: '../img/sprite.png';
+$spritesheet-sprites: ($logo-conde-nast, $logo-dark, $logo-le-figaro, $logo-le-monde, $logo-new-scientist, $logo-the-guardian, $logo-vogue, $logo, );
+$spritesheet: (143px, 264px, '../img/sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
